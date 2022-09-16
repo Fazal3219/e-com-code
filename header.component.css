@@ -1,0 +1,31 @@
+.navp{
+    padding-left: 300px;
+}
+.navp2{
+    padding-left: 320px;
+}
+.navbg{
+background-color: rgb(18, 119, 106);
+}
+
+.phone{
+    text-decoration: none;
+    color: white;
+}
+.font{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.search{
+    border-bottom: 2px solid black;
+}
+
+.logo{
+    padding-left: 5px;
+}
+.logo1{
+    color: red;
+}
+.logo2{
+ color: rgb(70, 29, 29);
+ font-weight:bolder;
+}

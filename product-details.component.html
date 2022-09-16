@@ -1,0 +1,161 @@
+<!-- <p>product-details works!</p> -->
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col-12">
+      <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col-6">
+            <div class="p-3 border bg-light imgdiv">
+              <img [src]="img5" alt="" class="img-fluid" style="height:500px; width: 100%;">
+
+            </div>
+            <br />
+            <div class="row row-cols-4 row-cols-lg-5 g-2 g-lg-3 ">
+              <div class="col-4">
+                <div class="p-3 border bg-light imgdiv2" >
+                  <img [src]="img5" alt=""class="img-fluid active"  style="height:80px; width: 100%;">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="p-3 border bg-light imgdiv2"><img [src]="img2" alt=""class="img-fluid" style="height:80px; width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-3 border bg-light imgdiv2"><img [src]="img3" alt=""class="img-fluid" style="height:80px; width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-3 border bg-light imgdiv2"><img [src]="img4" alt=""class="img-fluid" style="height:80px; width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-3 border bg-light imgdiv2"><img [src]="img5" alt=""class="img-fluid" style="height:80px; width: 100%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="row text-start">
+              <div class="col-6">
+                <h6>hot sells</h6>
+              </div>
+              <div class="col-6 text-end">
+                <fa-icon [icon]="faStar"> </fa-icon>
+                <fa-icon [icon]="faStar"> </fa-icon>
+                <fa-icon [icon]="faStar"> </fa-icon>
+                <fa-icon [icon]="faStar"> </fa-icon>
+                <fa-icon [icon]="faHalfStar"> </fa-icon>
+
+
+               
+              </div>
+            </div>
+            <div class="col">
+                <div class="p-3 text-start"><h4>{{name}}</h4> </div>
+              </div>
+              <div class="col">
+                <div class="p-3 text-start">
+                    <ul>
+                        <li>{{details}}</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 text-start">
+                    <span><b>{{price}}</b></span>
+                    <span style="padding-left:10px;">{{off}}</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 text-start">
+                  <label for="pname"> Type: <b>{{catogary}}</b></label> 
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 text-start">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button"
+                         class="btn btn-outline-primary"
+                         (click)="counter('sub')"
+                         >-</button>
+                        <button type="num" class="btn btn-outline-primary">{{count}}</button>
+                        <button type="button" class="btn btn-outline-primary"
+                        (click)="counter('add')"
+                        >+</button>
+                      </div>
+                      <button type="button" class="btn btn-outline-success" style="margin-left:20px;">Add To Cart +</button>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="p-3 text-start">
+                  <button type="button" class="btn btn-success"><b class="bsize">Buy Now</b></button>
+                        
+                    
+                      <button type="button" class="btn btn-outline-danger" style="margin-left:20px;"><fa-icon [icon]="faHeart"></fa-icon>
+                      </button>
+
+                      <button type="button" class="btn btn-outline-info" style="margin-left:20px;"><fa-icon [icon]="faBar"></fa-icon>
+                      </button>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="p-3 text-start">
+                    <label for="delivery"> <fa-icon [icon]="faFastTruck"></fa-icon> Estimated Delivery:{{dilevery}}</label><br>
+                    <label for="delivery"> <fa-icon [icon]="faBox"></fa-icon>   Shipping Charge:{{shippingcharge}}</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="p-3 text-start">
+                    <label for="payment">Gurantee Safe & Secure Checkout</label><br><br>
+                   <a href="#"> <fa-icon [icon]="faVisa" class="iconsize"></fa-icon> </a> 
+                    <a href="#"> <fa-icon [icon]="faPaypal" class="iconsize"></fa-icon> </a>
+                   <a href="#"> <fa-icon [icon]="faMater" class="iconsize"></fa-icon> </a>
+                   <a href="#"> <fa-icon [icon]="faGpay" class="iconsize"></fa-icon> </a>
+
+                   <br>
+                   <div class="share">
+                   <label for="share">Share :</label> <a href="">
+                   <fa-icon [icon]="faFb" class="share" ></fa-icon> </a>
+                   <a href="">
+                    <fa-icon [icon]="faTwetter" class="share"></fa-icon> </a>
+                    <a href="">
+                      <fa-icon [icon]="falinkdin" class="share" ></fa-icon> </a>
+                      <a href="">
+                      <fa-icon [icon]="faPinterest" class="share" ></fa-icon> </a>
+
+                    </div>
+
+                </div>
+              </div>
+              
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <button type="button" class="btn  desc_btn active">Description</button> &nbsp;
+     <button type="button" class="btn  desc_btn"> Shipping & Return</button>
+        &nbsp;
+       <button type="button" class="btn  desc_btn">Review</button>
+        &nbsp;
+       <button type="button" class="btn desc_btn">Additional Information</button>
+    </div>
+  </div>
+</div>
+<hr>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p>{{desc}}</p>
+    </div>
+  </div>
+
+</div>
